@@ -4,3 +4,77 @@
     position: sticky;
     top: 0;
 }
+
+header {
+    position: sticky;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+
+.img {
+    width: 270px;
+    margin-left: 450px;
+}
+
+.icon{
+    margin-top: 19px;
+    max-width: 30%;
+    height: 25px;
+    margin-bottom: -20px;
+
+}
+
+
+.links {
+    font-style: bold;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Roboto, Arial, sans-serif;
+    display: flex;
+    justify-content: right;
+    margin-right: 450px;
+    align-items: center;
+}
+
+.links a {
+    font-size: 28px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ABABAB;
+    padding: 0 .6em;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 2em;
+
+}
+
+
+
+.links li {
+    list-style: none;
+    font-family: Roboto,Arial,sans-serif;
+    font-weight: bold;
+}
+
+.links li :hover {
+    color: #00b39b;
+    
+}
+
+.logo {
+    margin-left: 954px;
+    margin-top: 35PX;
+}
+
+h1 {
+    font-size: 2em;
+    margin: .67em 0; font-size: 2.125rem;
+    color: #00b39b;
+    text-align: center;
+    /* font-family: ::-webkit-search-results-button; */
+    font-weight:5;
+    letter-spacing: -.3px;
+}

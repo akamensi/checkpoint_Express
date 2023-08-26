@@ -10,11 +10,11 @@ const timeWare = (req,res,next)=>{
     const currentHour = new Date().getHours();
     const allowedStartHour = 9;
     const allowedEndHour = 17;
-  
+
     if (currentHour < allowedStartHour || currentHour >= allowedEndHour) {
-      return res.status(403).json({ message: 'Requests are only allowed between 9 AM and 5 PM' });
+    return res.status(403).json({ message: 'Requests are only allowed between 9 AM and 5 PM' });
     }
-  
+
     next();
 }
 
@@ -24,11 +24,11 @@ app.get('/home',(req,res)=>{
     res.sendFile(__dirname+'/public/Home.html')
 })
 
-app.get('/services',(res,res)=>{
+app.get('/services',(req,res)=>{
 res.sendFile(__dirname+'/public/Services.html')
 })
 
-app.get('/contact',()=>{
+app.get('/contact',(req,res)=>{
     res.sendFile(__dirname+'/public/Contact.html')
 })
 
